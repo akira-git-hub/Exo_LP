@@ -355,6 +355,9 @@ Main {
 
             &-img2 {
                 margin-top: 3vw;
+                >img{
+                    width: 100%;
+                }
             }
 
             &-nayami {
@@ -374,6 +377,9 @@ Main {
             &-img3 {
                 text-align: center;
                 margin-top: 4vw;
+                >img{
+                    width: 100%;
+                }
             }
 
             &-img4 {
@@ -587,6 +593,7 @@ Main {
                     padding-top: 3vw;
                     padding-bottom: 3vw;
                     margin-top: 18vw;
+
                     >span {
                         font-size: 6.4vw;
                     }
@@ -595,6 +602,7 @@ Main {
                 &-img {
                     margin-left: -3.5vw;
                     margin-top: 2vw;
+
                     >img {
                         width: 56vw;
                     }
@@ -606,6 +614,7 @@ Main {
                     margin-top: 5vw;
                     margin-left: 10vw;
                     margin-bottom: 5vw;
+
                     >span {
                         color: #FAA5BA;
                         font-size: 4.27vw;
@@ -682,6 +691,7 @@ Main {
                     margin-right: -3.5vw;
                     text-align: right;
                     margin-top: 3vw;
+
                     >img {
                         width: 56vw;
                     }
@@ -694,7 +704,7 @@ Main {
                     color: #766B51;
                     margin-bottom: 5vw;
 
-                    >span{
+                    >span {
                         color: #FAA5BA;
                         font-size: 4.27vw;
                     }
@@ -703,13 +713,14 @@ Main {
             }
         }
     }
-    .Message{
-        &-title{
+
+    .Message {
+        &-title {
             font-size: 5.33vw;
-            color:#766B51;
+            color: #766B51;
             border-top: 2px solid #FAA5BA;
             border-bottom: 2px solid #FAA5BA;
-            width: 85.47vw; 
+            width: 85.47vw;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
@@ -717,40 +728,317 @@ Main {
             padding-left: 2vw;
             margin-top: 12vw;
         }
-        &-block1{
+
+        &-block1 {
             font-size: 4.4vw;
             color: #766B51;
             text-align: center;
             margin-top: 8vw;
-            &-color1{
-                color:#FF6363;
+
+            &-color1 {
+                color: #FF6363;
                 font-size: 6vw;
-                &-big{
+
+                &-big {
                     font-size: 6.67vw;
                 }
-                &-small{
+
+                &-small {
                     font-size: 5.07vw;
                 }
             }
-            &-color2{
+
+            &-color2 {
                 font-size: 6vw;
             }
         }
 
-        &-block2{
+        &-block2 {
             font-size: 4.4vw;
             color: #766B51;
             text-align: center;
             margin-top: 5vw;
-            &-line{
+
+            &-line {
                 font-size: 6vw;
                 color: #FF6363;
                 font-weight: bold;
-                text-align:  center;
-                &-small{
+                text-align: center;
+
+                &-small {
                     font-size: 4.4vw;
                 }
             }
         }
     }
+
+    .Voice {
+        background: #FAA5BA;
+        padding-bottom: 8vw;
+        margin-top: 5vw;
+        padding-top: 15vw;
+        background-image: url(../img/img.png);
+
+        &-title {
+            font-size: 6.4vw;
+            color: #766B51;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+
+            &-sub {
+                color: white;
+                font-size: 11.73vw;
+                font-family: "OoohBaby";
+                transform: rotate(-4.85deg);
+                position: absolute;
+                margin-top: -9.5vw;
+                margin-left: 26vw;
+                z-index: 1;
+            }
+        }
+
+        &-section {
+            background-color: white;
+            width: 75.2vw;
+            padding: 1vw;
+            margin-top: 5vw;
+            margin-left: auto;
+            margin-right: auto;
+
+            &-block {
+                border: 1.5px solid #FAA5BA;
+
+                &-main {
+                    display: flex;
+
+                    &-img {
+                        margin-left: 4vw;
+
+                        >img {
+                            width: 26.93vw;
+                        }
+                    }
+
+                    &-data {
+                        width: 100%;
+
+                        &-1 {
+                            margin-top: 5vw;
+                        }
+
+                        &-2 {
+                            margin-top: 8vw;
+                        }
+
+                        &-msg {
+                            font-size: 4.27vw;
+                            color: #766B51;
+                            text-align: center;
+                        }
+
+                        &-line {
+                            border-top: 2px solid #FAA5BA;
+                            width: 60%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+                        &-target {
+                            font-size: 3.73vw;
+                            color: #766B51;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                &-kanso {
+                    font-size: 3.73vw;
+                    color: #766B51;
+                    padding-left: 6vw;
+                    padding-bottom: 5vw;
+
+                }
+            }
+        }
+    }
+
+    .HowTo {
+        padding-bottom: 8vw;
+
+        &-title {
+            font-size: 9.07vw;
+            font-family: 'OoohBaby';
+            color: #FAA5BA;
+            text-align: center;
+            margin-top: 10vw;
+
+            &-setumei {
+                color: #766B51;
+                font-size: 5.07vw;
+                text-align: center;
+                margin-top: -3vw;
+                margin-bottom: 6vw;
+
+                >span {
+                    font-size: 3.73vw;
+                }
+            }
+        }
+
+        &-img {
+            text-align: center;
+
+            >img {
+                width: 83.2vw;
+                border: 2px solid #A98472;
+            }
+        }
+
+        &-section {
+            margin-left: 9vw;
+            margin-top: 6vw;
+
+            &-setp {
+                font-family: 'OoohBaby';
+                color: #FAA5BA;
+                font-size: 6.4vw;
+            }
+
+            &-message {
+                font-size: 3.73vw;
+                color: #766B51;
+            }
+        }
+    }
+
+    .QandA {
+        background-color: #FEFBF8;
+        padding-bottom: 12vw;
+        &-tittle {
+            font-size: 7.73vw;
+            color: #FAA5BA;
+            font-family: 'OoohBaby';
+            text-align: center;
+            padding-top: 8vw;
+        }
+
+        &-section {
+            background-color: white;
+            width: 82.27vw;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 4vw;
+            margin-top: 4vw;
+            box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+            &-qui {
+                font-size: 3.73vw;
+                color: #FAA5BA;
+
+                &-kigo {
+                    font-size: 5.07vw;
+                    color: #FAA5BA;
+                }
+            }
+
+            &-line {
+                border: 0.5px solid #766B51;
+            }
+
+            &-ans{
+                font-size: 3.2vw;
+                color: #766B51;
+                &-kigo{
+                    font-size: 3.73vw;
+                    color: #766B51;
+                }
+                &-button{
+                    text-align: center;
+                    margin-top: 3vw;
+                    >a{
+                        text-decoration: none;
+                        background-color: #5AC363;
+                        color: white;
+                        border-radius: 5vw;
+                        padding: 2vw 17vw;
+                        margin-left: -6vw;
+                        box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);
+                        >span{
+                            position: absolute;
+                            margin-left: 12vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Jusho{
+        background-color: #FFF7EE;
+        &-ttile{
+            font-size: 4.67vw;
+            text-align: center;
+            color: #766B51;
+            padding-top: 8vw;
+        }
+        &-name{
+            color: #766B51;
+            font-size: 3.2vw;
+            text-align: center;
+            margin-top: 8vw;
+        }
+        &-Jikan{
+            text-align: center;
+            margin-top: 10vw;
+            &-talbe{
+                margin-left: auto;
+                margin-right: auto;
+                width: 73.33vw;
+                &-tr{
+                    padding: 0.3vw;
+                    &-3{
+                        border-top: 1px solid #A98472;
+                    }
+                    >th{
+                        background-color: white;
+                        border: none;
+                        font-weight: normal;
+                        color: #766B51;
+                        font-size: 3.2vw;
+                        padding: 0.8vw;
+                    }
+                    >td{
+                        color: #766B51;
+                        font-size: 3.2vw;
+                        padding: 0.8vw;
+                    }
+                }
+            }
+        }
+        &-map{
+            text-align: center;
+            margin-top: 10vw;
+            >iframe{
+                width: 80.8vw;
+                height: 55.2vw;
+            }
+        }
+        &-msg1{
+            font-size: 2.4vw;
+            text-align: center;
+            margin-top: 10vw;
+        }
+        &-msg2{
+            font-size: 2.4vw;
+            text-align: center;
+            margin-top: 4vw;
+            padding-bottom: 3vw;
+            >span{
+                >a{
+                    color: black;
+                }
+            }
+        }
+    }
+
 }
