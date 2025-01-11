@@ -39,6 +39,7 @@ Main .CTA-block-line-p-small {
 Main .CTA-block-line-p-point {
   color: #FF6363;
   font-size: 6.4vw;
+  font-weight: bold;
 }
 Main .CTA-block-line-p-point-circle {
   position: absolute;
@@ -197,7 +198,10 @@ Main .CTA-block-Single-button > a > span {
   margin-left: 9vw;
 }
 Main .worries-block1 {
-  background-image: url(../img/trouble_bg.jpeg);
+  background: linear-gradient(to top, transparent 0%, transparent 70%, #fff 100%), url(../img/trouble_bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
   margin-top: 17vw;
 }
 Main .worries-block1-title {
@@ -248,7 +252,10 @@ Main .worries-block1-checklist-moji > span {
   font-size: 5.07vw;
 }
 Main .worries-block2 {
-  background-image: url(../img/trouble_bg.jpeg);
+  background: linear-gradient(to bottom, transparent 0%, transparent 20%, #fff 100%), url(../img/trouble_bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 }
 Main .worries-block2-moji1 {
   color: #766B51;
@@ -281,17 +288,20 @@ Main .worries-block2-moji4 > span {
   font-size: 5.87vw;
   color: #FAA5BA;
 }
-Main .worries-block3-img1 {
+Main .worries-block2-img {
   text-align: center;
   margin-top: 8vw;
 }
-Main .worries-block3-img1 > img {
+Main .worries-block2-img > img {
   width: 84.4vw;
 }
-Main .worries-block3-img2 {
+Main .worries-block3 {
+  background: linear-gradient(to bottom, #FEFBF8 0%, #E3EAF2 57%, #FEFBF8 100%);
+}
+Main .worries-block3-img1 {
   margin-top: 3vw;
 }
-Main .worries-block3-img2 > img {
+Main .worries-block3-img1 > img {
   width: 100%;
 }
 Main .worries-block3-nayami {
@@ -306,20 +316,41 @@ Main .worries-block3-iryo {
   text-align: center;
   font-weight: bold;
 }
-Main .worries-block3-img3 {
+Main .worries-block3-img2 {
   text-align: center;
   margin-top: 4vw;
-}
-Main .worries-block3-img3 > img {
-  width: 100%;
-}
-Main .worries-block3-img4 {
-  margin-top: -24vw;
-  z-index: -1;
+  z-index: 2;
   position: relative;
 }
-Main .worries-block3-img4 > img {
+Main .worries-block3-img2 > img {
   width: 100%;
+}
+Main .worries-block3-img3 {
+  z-index: 1;
+  position: relative;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+}
+Main .worries-block3-img3 > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center bottom;
+     object-position: center bottom;
+  width: 300px;
+  width: 100%;
+  height: 36vw;
+  overflow: hidden;
+  border-radius: 50%;
+}
+Main .worries-block3-img3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 40px 40px rgb(227, 234, 242);
 }
 Main .worries-block3-ekuso-title {
   font-size: 9.07vw;
@@ -357,10 +388,10 @@ Main .worries-block3-ekuso-setumei2 {
   text-align: center;
   margin-top: 6vw;
 }
-Main .worries-block3-img5 {
+Main .worries-block3-img4 {
   text-align: center;
 }
-Main .worries-block3-img5 > img {
+Main .worries-block3-img4 > img {
   width: 93.33vw;
   margin-top: 2vw;
 }
@@ -630,6 +661,8 @@ Main .Voice {
   margin-top: 5vw;
   padding-top: 15vw;
   background-image: url(../img/img.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 Main .Voice-title {
   font-size: 6.4vw;
